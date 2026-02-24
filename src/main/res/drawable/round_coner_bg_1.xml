@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 这里设置比背景色 #34495E 更深的颜色，比如 #2C3E50 -->
+    <solid android:color="#545862" />
+    <!-- 设置四个角的圆角半径 -->
+    <corners android:radius="16dp" />
+</shape>

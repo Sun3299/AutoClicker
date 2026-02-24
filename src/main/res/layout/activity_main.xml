@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E2E">
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#20203F"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- 1. 标题：脚本列表 -->
+        <TextView
+            android:paddingLeft="16dp"
+            android:paddingTop="6dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="脚本列表"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="start" />
+
+        <!-- 2. 加号按钮：在设置按钮左边 -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_add"
+            app:fabSize="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_add"
+            app:backgroundTint="#2D2D3F"
+            app:tint="@android:color/white"
+            app:maxImageSize="36dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="0dp"/>
+
+        <!-- 3. 设置按钮：最右侧 -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_settings"
+            app:fabSize="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_settings"
+            app:backgroundTint="#2D2D3F"
+            app:tint="@android:color/white"
+            app:maxImageSize="31dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="0dp"/>
+
+    </LinearLayout>
+    <!-- 添加按钮：放在最前面，确保 RecyclerView 能找到它 -->
+    <!-- 脚本列表：放在按钮下方，占满剩余空间 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_script_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

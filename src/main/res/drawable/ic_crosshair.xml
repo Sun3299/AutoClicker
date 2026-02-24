@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- 十字准星的水平线 -->
+    <path
+        android:fillColor="#00CC00"
+        android:pathData="M2,24 L46,24"
+        android:strokeWidth="1.5" />
+    <!-- 十字准星的垂直线 -->
+    <path
+        android:fillColor="#00CC00"
+        android:pathData="M24,2 L24,46"
+        android:strokeWidth="1.5" />
+</vector>

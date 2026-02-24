@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/floating_window_bg"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- 开始按钮 -->
+    <ImageButton
+        android:id="@+id/btn_start"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_floating_bg"
+        android:src="@drawable/ic_start"
+        android:tint="@android:color/holo_green_light" />
+
+    <!-- 音量+按钮 -->
+    <ImageButton
+        android:id="@+id/btn_add"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_floating_bg"
+        android:src="@drawable/ic_add"
+        android:tint="@android:color/white" />
+
+    <!-- 旋转按钮 -->
+    <ImageButton
+        android:id="@+id/btn_swipe"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_floating_bg"
+        android:src="@drawable/ic_swipe"
+        android:tint="@android:color/white" />
+
+    <!-- 音量-按钮 -->
+    <ImageButton
+        android:id="@+id/btn_remove"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_floating_bg"
+        android:src="@drawable/ic_minus"
+        android:tint="@android:color/white" />
+    <ImageButton
+        android:id="@+id/btn_edit"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_floating_bg"
+        android:src="@drawable/ic_edit"
+        android:tint="@android:color/white" />
+
+    <!-- 截图按钮 -->
+    <ImageButton
+        android:id="@+id/btn_save"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_floating_bg"
+        android:src="@drawable/ic_save"
+        android:tint="@android:color/white" />
+    <ImageButton
+        android:id="@+id/btn_clean"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_floating_bg"
+        android:src="@drawable/ic_delete"
+        android:tint="@android:color/white" />
+
+    <!-- 设置按钮 -->
+    <ImageButton
+        android:id="@+id/btn_settings"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_floating_bg"
+        android:src="@drawable/ic_settings"
+        android:tint="@android:color/white" />
+
+    <!-- 关闭按钮 -->
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_floating_bg"
+        android:src="@drawable/ic_close"
+        android:tint="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="#161c2c"
+    app:cardElevation="6dp"
+    android:layout_margin="0dp"
+    app:cardUseCompatPadding="false"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:layout_margin="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#2f374c"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/script_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="下个动作前的间隔"
+                    android:textSize="14sp"
+                    android:textColor="#BDC3C7"
+                    android:layout_marginBottom="8dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- 间隔最小值输入框 -->
+                    <EditText
+                        android:id="@+id/et_interval_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_coner_bg"
+                        android:text="500"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:inputType="number"
+                        android:layout_marginEnd="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="~"
+                        android:textSize="12sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"/>
+                    <!-- 间隔最大值输入框 -->
+                    <EditText
+                        android:id="@+id/et_interval_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_coner_bg"
+                        android:text="500"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:inputType="number"
+                        android:layout_marginEnd="8dp"/>
+                    <!-- 间隔单位选择器 -->
+                    <LinearLayout
+                        android:id="@+id/customSpinnerTrigger"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_coner_bg_1"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:layout_marginEnd="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvSpinnerValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="毫秒"
+                            android:textSize="18sp"
+                            android:textColor="#FFFFFF"/>
+
+                        <ImageView
+                            android:id="@+id/ivSpinnerArrow"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_arrow_down"
+                            android:layout_marginStart="4dp"
+                            android:tint="#FFFFFF"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="滑动持续时间间隔区间"
+                    android:textSize="14sp"
+                    android:textColor="#BDC3C7"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- 滑动时长最小值输入框 -->
+                    <EditText
+                        android:id="@+id/et_duration_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_coner_bg"
+                        android:text="500"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:inputType="number"
+                        android:layout_marginEnd="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="~"
+                        android:textSize="12sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"/>
+                    <!-- 滑动时长最大值输入框 -->
+                    <EditText
+                        android:id="@+id/et_duration_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_coner_bg"
+                        android:text="500"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:inputType="number"
+                        android:layout_marginEnd="8dp"/>
+                    <!-- 时长单位选择器 -->
+                    <LinearLayout
+                        android:id="@+id/customSpinnerTrigger1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_coner_bg_1"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:layout_marginEnd="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvSpinnerValue1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="毫秒"
+                            android:textSize="18sp"
+                            android:textColor="#FFFFFF"/>
+
+                        <ImageView
+                            android:id="@+id/ivSpinnerArrow1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_arrow_down"
+                            android:layout_marginStart="4dp"
+                            android:tint="#FFFFFF"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 应用至已有点的复选框 -->
+                <CheckBox
+                    android:id="@+id/cb_apply_to_existing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="同时应用至当前已有的点"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#343c50"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="运行多久后停止"
+                    android:textSize="14sp"
+                    android:textColor="#BDC3C7"
+                    android:layout_marginBottom="8dp"/>
+                <!-- 停止条件选择器 -->
+                <LinearLayout
+                    android:id="@+id/customSpinnerTrigger2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_coner_bg_1"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvSpinnerValue2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="永不停止"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"/>
+
+                    <ImageView
+                        android:id="@+id/ivSpinnerArrow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:tint="#FFFFFF" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginBottom="0dp">
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="取消"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#34495E"
+                android:background="@drawable/tv_round_bg"
+                android:layout_marginEnd="8dp"
+                android:padding="12dp"/>
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="完成"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#3498DB"
+                android:background="@drawable/tv_round_bg"
+                android:padding="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

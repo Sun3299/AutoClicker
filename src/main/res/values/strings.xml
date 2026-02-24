@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AutoClicker</string>
+    <string name="accessibility_service_desc">自动连点器：模拟屏幕点击和滑动，需开启无障碍权限使用</string>
+    <string name="interval_hint">输入点击间隔（毫秒）</string>
+    <string name="start_click">启动连点</string>
+    <string name="accessibility_guide">请先开启无障碍权限</string>
+    <string name="stop_click">停止连点</string>
+</resources>

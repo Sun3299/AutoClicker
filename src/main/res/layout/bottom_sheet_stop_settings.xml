@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/top_round_corner_bg">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="运行多久后停止"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 1. 永不停止 -->
+    <RadioButton
+        android:paddingLeft="16dp"
+        android:id="@+id/rb_never_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="永不停止"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:checked="true"
+        android:buttonTint="#3498DB"/>
+
+    <!-- 时长输入区域 -->
+    <LinearLayout
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="clip_vertical">
+        <RadioButton
+            android:id="@+id/rb_stop_after_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:buttonTint="#3498DB"/>
+        <EditText
+            android:id="@+id/et_hour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round_bg"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="8dp"
+            android:layout_marginEnd="4dp"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小时"
+            android:textColor="#BDC3C7"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/et_minute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round_bg"
+            android:text="5"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="8dp"
+            android:layout_marginEnd="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分钟"
+            android:textColor="#BDC3C7"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/et_second"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round_bg"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="秒"
+            android:textColor="#BDC3C7"/>
+    </LinearLayout>
+
+    <!-- 3. 重复次数后停止 -->
+
+
+    <!-- 次数输入区域 -->
+    <LinearLayout
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <RadioButton
+
+            android:id="@+id/rb_stop_after_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:buttonTint="#3498DB"/>
+        <EditText
+            android:id="@+id/et_repeat_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round_bg"
+            android:text="10"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="次"
+            android:textColor="#BDC3C7"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+    <!-- 完成按钮 -->
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/tv_round_bg"
+        android:backgroundTint="#3498DB"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
